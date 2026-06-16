@@ -1,0 +1,107 @@
+.list-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.appointment-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.appointment-item {
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #dfe8e6;
+  background: #ffffff;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.06);
+}
+
+.item-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.item-doctor {
+  margin: 0;
+  color: #1e293b;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.item-meta {
+  margin: 4px 0;
+  color: #3a4a5b;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.status-badge {
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  background: transparent;
+}
+
+.status-approved {
+  color: #029230;
+}
+
+.status-rejected {
+  color: #e11d48;
+}
+
+.status-pending {
+  color: #f59e0b;
+}
+
+.action-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.small-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  color: #ffffff;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.approve-btn {
+  background: #15803d;
+}
+
+.approve-btn:hover {
+  background: #166534;
+}
+
+.reject-btn {
+  background: #dc2626;
+}
+
+.reject-btn:hover {
+  background: #b91c1c;
+}
+
+.empty-state {
+  margin: 0;
+  color: #475569;
+}
+
+@media (max-width: 640px) {
+  .item-doctor {
+    font-size: 18px;
+  }
+
+  .item-meta {
+    font-size: 14px;
+  }
+}

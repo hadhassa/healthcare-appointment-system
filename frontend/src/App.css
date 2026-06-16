@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Segoe UI", Tahoma, sans-serif;
+  background: #f5f7fb;
+  color: #1e293b;
+}
+
+a {
+  color: #1e40af;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.top-navbar {
+  background: #1e3a8a;
+  color: #ffffff;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-navbar h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-pill {
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.nav-pill.active {
+  background: transparent;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.logout-btn {
+  border: none;
+  background: #0b65df;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.logout-btn:hover {
+  background: #085dcf;
+}
+
+.dashboard-stage {
+  max-width: 1220px;
+  margin: 14px auto 20px;
+  padding: 0 16px;
+}
+
+.dashboard-layout {
+  border-radius: 10px;
+  border: 4px solid #55ced8;
+  background: linear-gradient(115deg, #c6e2f7 0%, #e1f4ee 70%, #bfd9f8 100%);
+  padding: 14px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.left-panel {
+  flex: 1;
+  min-width: 280px;
+}
+
+.right-panel {
+  flex: 0.95;
+  min-width: 300px;
+}
+
+.single-panel-layout {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 14px;
+}
+
+.doctor-stage {
+  max-width: 1220px;
+  margin: 14px auto 20px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 4px solid #55ced8;
+  background: linear-gradient(115deg, #c6e2f7 0%, #e1f4ee 70%, #bfd9f8 100%);
+}
+
+.doctor-heading {
+  margin: 2px 2px 14px;
+  color: #1f2937;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.panel-card {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #d8ebef;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.07);
+  padding: 14px;
+}
+
+.panel-title {
+  margin: 0 0 10px;
+  color: #0f172a;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 12px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #d4dde8;
+  border-radius: 8px;
+  padding: 9px 10px;
+  font-size: 12px;
+  outline: none;
+  background: #ffffff;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+}
+
+.primary-btn {
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 12px;
+  background: linear-gradient(90deg, #0ea5e9 0%, #2563eb 100%);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(90deg, #0284c7 0%, #1d4ed8 100%);
+}
+
+.auth-hero {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 34px 22px;
+}
+
+.patient-hero {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #51d4cf 0%, #8cb9ea 100%);
+}
+
+.doctor-hero {
+  min-height: calc(100vh - 64px);
+  background: linear-gradient(120deg, #c8e5f7 0%, #dbefe7 100%);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.16);
+  padding: 24px 22px;
+}
+
+.compact-auth {
+  max-width: 360px;
+  padding: 18px;
+}
+
+.doctor-login-card {
+  max-width: 300px;
+}
+
+.auth-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #0f172a;
+  font-size: 16px;
+}
+
+.brand-title {
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+.auth-link-row {
+  margin: 8px 0 0;
+  color: #334155;
+  font-size: 12px;
+}
+
+.centered-link {
+  text-align: center;
+}
+
+.error-text {
+  margin: 0;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.success-text {
+  margin: 0;
+  color: #15803d;
+  font-size: 13px;
+}
+
+.loading-text {
+  margin: 0;
+  color: #334155;
+  font-size: 13px;
+}
+
+@media (max-width: 980px) {
+  .top-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .doctor-stage,
+  .dashboard-stage {
+    margin-top: 10px;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    min-width: 0;
+  }
+}
